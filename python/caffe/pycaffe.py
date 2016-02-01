@@ -3,6 +3,7 @@ Wrap the internal caffe C++ module (_caffe.so) with a clean, Pythonic
 interface.
 """
 
+import numpy as np
 from collections import OrderedDict
 try:
     from itertools import izip_longest
