@@ -15,6 +15,11 @@ import cStringIO as StringIO
 import urllib
 import exifutil
 
+# import caffe twice in Mac OS Yosemite 10.10.3
+try:
+    import caffe
+except ImportError:
+    print "[Warn]: import caffe failed"
 import caffe
 
 REPO_DIRNAME = os.path.abspath(os.path.dirname(os.path.abspath(__file__)) + '/../..')
